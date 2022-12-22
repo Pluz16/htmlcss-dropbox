@@ -78,7 +78,7 @@ border: 5px solid #000000;
 	background-color: white;
 }
 
-.main-header .nav_menu{
+.main-header .nav__menu{
 	display: flex;
 	align-items: center;
 }
@@ -89,4 +89,14 @@ border: 5px solid #000000;
 	line-height: 34px;
 	font-size: 14px;
 	white-space: nowrap;
+}
+
+.main-header .menu__item--logo a {
+	padding-left: 0;
+	line-height: unset;
+}
+
+.button--blue{
+	background-color: blue;
+	color: aliceblue;
 }
