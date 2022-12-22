@@ -191,3 +191,8 @@ border: 5px solid #000000;
 .plans .row {
 	row-gap: 50px;
 }
+
+.card-header{
+	border-bottom: solid grey;
+	padding: 10px;
+}
