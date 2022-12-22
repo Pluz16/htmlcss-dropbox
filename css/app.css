@@ -23,6 +23,9 @@ ol,
 menu {
 	list-style: none;
 }
+img{
+	max-width: 100%;
+}
 
 a {
 	text-decoration: none;
@@ -99,4 +102,31 @@ border: 5px solid #000000;
 .button--blue{
 	background-color: blue;
 	color: aliceblue;
+}
+
+.container-lg{
+	max-width: 1256px;
+	margin: 0 top;
+}
+
+.section.hero{
+	background-color: rgb(159, 199, 235);
+
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-12{
+	flex-basis: 100%;
+}
+
+.hero__title{
+	font-size: 4.5rem;
+}
+
+.hero .row {
+	row-gap: 2rem;
 }
