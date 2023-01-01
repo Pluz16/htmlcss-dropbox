@@ -1,76 +1,34 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
-button,
-input {
-	border: none;
-	background-color: transparent;
+:root {
+	--brand-color: #0061ff;
+	--gray-color: #afafaf;
 }
 
 html {
 	font-family: 'Open Sans', sans-serif;
 }
 
-img {
-	max-width: 100%;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+menu,
 ul,
-ol,
-menu {
+ol {
 	list-style: none;
 }
-img{
-	max-width: 100%;
-}
 
-a {
+a:not(.no-reset) {
 	text-decoration: none;
 	color: currentColor;
 }
 
-/* body {
-	height: 100vh;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	color: white;
+img {
+	max-width: 100%;
 }
-
-
-.container-nav{
-box-sizing: border-box;
-
-position: absolute;
-width: 2000px;
-height: 84px;
-
-border: 5px solid #000000;
-}
-
-main{
-    box-sizing: border-box;
-
-position: absolute;
-width: 2000px;
-height: 6801px;
-
-border: 5px solid #000000;
-}
-
-footer{
-    box-sizing: border-box;
-
-position: absolute;
-width: 2000px;
-height: 596px;
-
-border: 5px solid #000000;
-}
- */
 
 .main-header {
 	display: flex;
@@ -110,6 +68,8 @@ border: 5px solid #000000;
 .button--blue {
 	background-color: #0061ff;
 	color: white;
+	background-color: var(--brand-color);
+	color: white !important;
 }
 
 .container {
@@ -132,8 +92,6 @@ border: 5px solid #000000;
 .row {
 	display: flex;
 	flex-wrap: wrap;
-
-	/* border: 4px solid red; */
 }
 
 .row:not(.no-gutter) {
@@ -151,6 +109,14 @@ border: 5px solid #000000;
 
 .col-12 {
 	flex-basis: 100%;
+}
+
+.col-60 {
+	flex-basis: 60%;
+}
+
+.col-40 {
+	flex-basis: 40%;
 }
 
 .hero__title {
@@ -183,16 +149,123 @@ border: 5px solid #000000;
 	display: block;
 }
 
-.card {
-	border: 1px solid black;
-	padding: 20px;
+.plans {
+	padding: 72px 0;
 }
 
 .plans .row {
 	row-gap: 50px;
 }
 
-.card-header{
-	border-bottom: grey;
-	padding: 10px;
+.section__title {
+	font-size: 36px;
+}
+
+.bill-rate__wrapper {
+	display: flex;
+	gap: 70px;
+	padding: 48px 0;
+}
+
+.bill-rate {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.bill-rate .circle {
+	display: inline-block;
+	width: 24px;
+	border-radius: 50%;
+	height: 24px;
+	border: 1px solid rgb(20, 20, 20);
+}
+
+.bill-rate.selected .circle {
+	border-color: var(--brand-color);
+	border-width: 6px;
+}
+
+/* PLAN CARD RULES */
+
+.card {
+	border: 1px solid var(--gray-color);
+	height: 100%;
+}
+
+.card__header {
+	text-align: center;
+	border-bottom: 1px solid var(--gray-color);
+	padding: 12px 32px;
+	font-size: 14px;
+}
+
+.card__header i {
+	font-size: 18px;
+}
+
+.card__body {
+	padding: 32px;
+}
+
+.card .features {
+	margin: 45px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.card .features > li {
+	font-size: 12px;
+	display: flex;
+	gap: 8px;
+}
+
+.card .features > li i {
+	font-size: 14px;
+	flex-shrink: 0;
+	flex-basis: 20px;
+	text-align: center;
+}
+
+.card__title {
+	font-size: 20px;
+	margin-bottom: 14px;
+}
+
+.plan__price,
+.plan__bill-rate {
+	font-size: 14px;
+}
+
+.plan__price {
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.plan__bill-rate {
+	color: #555555;
+}
+
+.card .button {
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+.card .plans-features-title {
+	font-size: 16px;
+	margin: 20px 0 0;
+}
+
+.card .plans-features-title::before {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 60px;
+	background-color: var(--gray-color);
+	margin: 38px 0;
+}
+
+.card .features.blue-icons i {
+	color: var(--brand-color);
 }
