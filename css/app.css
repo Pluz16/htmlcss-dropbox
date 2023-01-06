@@ -269,3 +269,8 @@ img {
 .card .features.blue-icons i {
 	color: var(--brand-color);
 }
+
+.team-contact{
+	display: flex;
+}
+
