@@ -342,6 +342,34 @@ img {
 	/* margin-top:  36px; */ 
 }
 
+.faq-item {
+	/* border-top: 1px solid; */
+	border-bottom: 1px solid;
+	border-color: #555555;
+	padding: 36px 0;
+	/* margin-top: -1px; //soluzione avanzata */
+}
+
+.faq-item:first-child {
+	border-top: 1px solid;
+}
+
+.faq-item__header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: space-between;
+}
+
+.faq-item__body {
+	display: none;
+	margin-top: 32px;
+}
+
+.faq-item:hover .faq-item__body {
+	display: block;
+}
+
 
 
 
