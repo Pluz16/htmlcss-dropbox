@@ -66,8 +66,6 @@ img {
 }
 
 .button--blue {
-	background-color: #0061ff;
-	color: white;
 	background-color: var(--brand-color);
 	color: white !important;
 }
@@ -92,6 +90,8 @@ img {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+
+	/* border: 4px solid red; */
 }
 
 .row:not(.no-gutter) {
@@ -276,18 +276,6 @@ img {
 	color: var(--brand-color);
 }
 
-.team-contact{
-	display: flex;
-	
-}
-
-.partner-btn{
-	background-color: aliceblue;
-	color: black !important;
-	border: solid black !important;
-	margin-top: 25px;
-}
-
 .business .row {
 	row-gap: 50px;
 }
@@ -301,6 +289,8 @@ img {
 }
 
 .slider__tile {
+	/* border: 2px solid red; */
+	/* padding: 20px; */
 	flex-basis: calc(100% / 3);
 
 	display: flex;
@@ -331,7 +321,9 @@ img {
 	gap: 36px;
 }
 
-
+.active-slide-content figure {
+	display: contents; 
+}
 
 .active-slide__logo::after {
 	content: '';
