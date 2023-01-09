@@ -142,6 +142,7 @@ img {
 
 .hero__image {
 	flex-basis: 70%;
+	margin-bottom: -80px;
 }
 
 .hero__image img {
@@ -149,8 +150,13 @@ img {
 	display: block;
 }
 
-.plans {
+.business,
+.faq-section {
 	padding: 72px 0;
+}
+
+.plans {
+	padding: 180px 0 72px;
 }
 
 .plans .row {
@@ -282,6 +288,24 @@ img {
 	margin-top: 25px;
 }
 
+.business .row {
+	row-gap: 50px;
+}
+
+.feature-card__title {
+	margin-bottom: 36px;
+}
+
+.slider__content {
+	display: flex;
+}
+
+.slider__tile {
+	flex-basis: calc(100% / 3);
+
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 
